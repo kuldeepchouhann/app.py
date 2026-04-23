@@ -22,7 +22,7 @@ def search():
 @app.route('/static-login')
 def static_login(): return send_file(BASE_DIR / 'm photo.jpeg', mimetype='image/jpeg')
 @app.route('/route-map')
-def route_map(): return send_file(BASE_DIR / 'Bhopal-Metro-Route-Map (1).jpg', mimetype='image/jpeg')
+def route_map(): return send_file(BASE_DIR / 'main photo.jpeg', mimetype='image/jpeg')
 @app.route('/ai-chat', methods=['POST'])
 def ai_chat():
  q=request.form.get('q','').lower();
